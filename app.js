@@ -104,12 +104,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
 
+function multiplyArray(multArr) { //eslint-disable-line
+  var aX = multArr[0];
+  var bX = multArr[1];
+  var cX = multArr[2];  
+  var dX = multiply(aX,bX)[0];
+  abMult = multiply(cX,dX)[0];
+return[abMult, 'The numbers ' + multArr + ' have a product of ' + abMult + '.'];
 }
 
+
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
